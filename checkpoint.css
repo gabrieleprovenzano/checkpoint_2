@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
-.container {
+body {
     height: 100vh;
+    background: yellow;
+}
+
+.container {
+    height: 100%;
     background: yellow;
 }
 
@@ -26,10 +31,11 @@ main {
 
 .square {
     background: white;
-    width: 20%;
+    width: 10%;
     height: 60%;
     border-radius: 50%;
     margin-left: 3%;
+    margin-top: 3%;
 }
 
 .sx {
@@ -62,17 +68,23 @@ main {
     width: 70%;
     height: 20%;
     border-radius: 10%;
+    color: blue;
+    font-size: x-large;
 }
 
 input {
     width: 90%;
     height: 5%;
+    text-align: center;
 }
 
 .dis_button {
     width: 70%;
     height: 20%;
     border-radius: 10%;
+    color: blue;
+    font-size: x-large;
+    background: grey;
 }
 
 footer {
@@ -87,12 +99,78 @@ footer {
 .text1 {
     color: black;
     margin-left: 20%;
+    font-weight: bold;
 }
 
 
 .text2 {
     color: black;
     margin-right: 20%;
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 30%;
+        align-items: center;
+        justify-content: center
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .sx {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dis_button {
+        height: 70%;
+        width: 80%;
+    }
+    
+    .big_button {
+        height: 70%;
+        width: 80%;
+    }
+    .center {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    input {
+        height: 20%;
+        width: 30%;
+    }
+    .dx {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .text1 {
+        margin-right: 20%;
+    }
+
+    .text2 {
+       margin-left: 20%;
+    }
 }
 
 
